@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300&family=Work+Sans:wght@500&display=swap');
+body
+{
+    font-family:'Montserrat', sans-serif;
+    margin:0;
+    font-size: 16px;
+}
+/* entête */
+.header > div:nth-child(1)
+{
+    padding: 10vw;
+}
+.header p
+{
+    font-size: 20px;
+}
+/* première ligne */
+.firt_line
+{
+    display: none;
+}
+.text-left
+{
+    text-align: center;
+}
+/* acceuil */
+.flex
+{
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content: space-around;
+}
+.header_left p:nth-child(3)
+{
+    font-size: 13px;
+}
+/* photo d'acceuil */
+.my_picture
+{
+    width: 100px;
+    height: auto;
+    border-radius: 20%;
+}
+.my_picture + p
+{
+    text-align: center;
+}
+/* barre de navigation */
+.navbarcontainer
+{
+    display: flex;
+    justify-content: center;
+}
+.navbar
+{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+    padding:5px 30px;
+    margin: 0;
+    bottom: 40px;
+    border-radius: 135px;
+    box-shadow: 9px 9px 20px rgba(0, 0, 0, 1);
+    background-color: #deff26;
+
+ 
+}
+/* lien de la barre de navigation */
+nav a
+{
+    color:inherit;
+    font-size:17px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    /* background-color: #2667FF; */
+    background-color: #deff26;
+}
+/* le groupe "présentation"*/
+.patient_presentation
+{
+    display: flex;
+    justify-content: center;   
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+/* image de présentation */
+.patient_presentation img
+{
+    width: 300px;
+    height: auto;
+    border-radius: 15%;
+}
+/* niveau d'étude */
+.niveau
+{
+    display: flex;
+    text-align: center;
+}
+.niveau > div 
+{
+    margin: 10px;
+}
+.niveau
+{
+    font-size: 20px;
+    padding: 15px;
+}
+/* mon niveau d'étude */
+.niveau p:nth-child(2)
+{
+    font-size: 13px;
+    color: #2667FF;
+}
+/* lien dans niveau */
+.niveau a
+{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    height: 40px;
+    color: #fff;
+    background-color: #3F8EFC;
+}
+.biographie
+{
+    text-align: center;
+    margin: 10px;
+}
+.biographie h3
+{
+    font-size: 30px;
+}
+/* ce que je sais faire */
+.ce_que_je_sais_faire h3
+{
+    font-size: 30px;
+}
+/* ce que je sais faire titre */
+.ce_que_je_sais_faire h4
+{
+    text-align: center;
+    font-size: 20px;
+}
+.ce_que_je_sais_faire
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.dev
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+}
+.dev > div
+{
+    border-radius: 30px;
+    margin: 10px;
+    padding: 12px;
+    box-shadow: 1px 1px 10px #ADD7F6;
+}
+.liste_ce_que_je_sais_faire
+{
+    display: flex;
+}
+.liste_ce_que_je_sais_faire > div
+{
+    margin: 7px;
+}
+.liste_ce_que_je_sais_faire div p
+{
+    font-size: 15px;
+}
+.liste_ce_que_je_sais_faire li
+{
+    list-style-type: none;
+}
+/* mettre une image avant les listes */
+.liste_ce_que_je_sais_faire li::before
+{
+    content:url(../image/validation.png);
+    margin: 3px;
+    vertical-align: middle;
+}
+.projet_et_realisation
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+    z-index: 2;
+    justify-content: center;
+}
+.projet_et_realisation >div
+{
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    position: relative;
+}
+.projet_et_realisation>div
+{
+    width: 300px;
+    height: 200px;
+    box-shadow: 6px 6px 10px #ADD7F6;
+    border-radius: 20px;
+}
+.picture2
+{
+    width: 48px;
+    height: 48px;
+    position: relative;
+    left:50%;
+    top:-25px;
+    display: flex;
+    padding: 5px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-color:#3F8EFC ;
+}
+.big_number
+{
+    font-size: 70px;
+    margin:5px;
+}
+.big_number + p
+{
+    color: #031926;
+    font-size: 15px;
+}
+.pf h3
+{
+    font-size: 30px;
+}
+.pf
+{
+    text-align: center;
+}
+.picture6
+{
+    width: 300px;
+    height: auto;
+}
+.portfolio
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.mon_portfolio a
+{
+    color: #000;
+    text-decoration: none;
+}
+.mon_portfolio a:hover
+{
+    text-decoration: underline;
+}
+.titre_commentaire
+{
+    text-align: center;
+    font-size: 30px;
+}
+.commentaire
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.commentaire > div 
+{
+    width: 350px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    padding: 5px;
+    box-shadow: 6px 6px 10px #ADD7F6;
+    /* box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4); */
+}
+.Blaise:hover,.kisenga_suze:hover, .bkl:hover, .mushiri:hover
+{
+    width: 160px;
+    height: 160px; 
+    border-radius:50%;
+    margin: 0px; 
+}
+.vainqueur,.rene_suze, .jlk, .mbayo
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+
+}
+.mes_contacts
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.p
+{
+    font-size: 13px;
+    font-style: italic;
+}
+#contact>h2
+{
+    font-size: 30px;
+    text-align: center;
+}
+.mes_contacts>div:nth-child(1)
+{
+    margin: 1px;
+    padding: 0px;
+    text-align: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.discussion>div
+{
+    margin: 10px;
+    width: 40%;
+    height: 140px;
+    font-size: 11px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px #ADD7F6;
+}
+.picture4
+{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 3px;
+    background-color: #3F8EFC;
+}
+.mes_contacts>div:nth-child(2)
+{
+    margin-left: 10px;
+    padding: 5px;
+    height: 210px;
+    border-radius: 30px;
+    text-align: center;
+}
+.mes_contacts input
+{
+    border:0px;
+    border-bottom: 1px solid #000000;
+}
+.mes_contacts input::placeholder,.mes_contacts textarea::placeholder
+{
+    font-size: 12px;
+}
+.mes_contacts textarea
+{
+    border: 0px;
+    margin-top: 7px;
+    border-bottom: 1px solid #000000;
+}
+.mes_contacts label
+{
+    font-size: 13px;
+}
+.mes_contacts button
+{
+    border: 1px solid #3F8EFC;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 0.7em;
+    background-color: #3F8EFC;
+}
+.last_paragraph
+{
+    margin-bottom: 0;
+}
+footer
+{
+    text-align: center;
+    height: 200px;
+    margin-top: 30px;
+    background-color: #ADD7F6;
+    
+}
+@media only screen and (min-width:580px)
+{
+    .flex
+    {
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: justify;
+    }
+    .firt_line
+    {
+        display:block;
+        font-size: 35px;
+        margin-bottom: 5px;
+    }   
+    .text-left
+    {
+        text-align: left;
+    }
+    .header_left p:nth-child(3)
+    {
+        font-size: 16px;
+    }
+}
